@@ -14,5 +14,8 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return "API funcionando correctamente";
+    $num1 = 12; 
+    $num2 = 12;
+    $result = $num1 + $num2; 
+    return "API funcionando correctamente" . $result;
 });
